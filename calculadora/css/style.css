@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    padding-top: 50px;
+    background-color: black;
+}
+
+.box__caculadora{
+    height: 610px;
+    width: 90%;
+    max-width: 500px;
+    border: 5px solid rgb(0, 255, 242);
+    box-shadow: 0px 0px 15px 6px rgba(0, 255, 255, 0.5);
+    margin: 0 auto;
+    padding-top: 20px;
+    border-radius: 15px;
+}
+
+.tela{
+    width: 90%;
+    max-width: 480px;
+    height: 200px;
+    border: 1px solid rgb(0, 255, 242);
+    box-shadow: 0px 0px 15px 2px rgba(0, 255, 255, 0.3);
+    margin: 0 auto;
+    padding: 2%;
+    overflow: auto;
+    color: white;
+}
+
+.tela p{
+    display: inline-block;
+    font-size: 20px;
+}
+
+.tela #resultado{
+    display: block;
+    font-size: 30px;
+}
+
+.teclado{
+    width: 90%;
+    max-width: 480px;
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border: 1px solid black;
+    padding: 4px;
+}
+
+.tecla{
+    width: calc(25% - 4px);
+    height: 82px;
+    margin-bottom: 4px;
+    background-color:aqua;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 30px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+
+    transition: 0.5s;
+
+    animation: borderAni 1s linear infinite;
+}
+
+.tecla:hover{
+    background-color:aqua;
+    border: 1px solid rgb(0, 217, 255);
+    box-shadow: 0px 0px 15px 2px aqua;
+}
+
+@keyframes numeAni {
+    0%{
+        color: rgba(0, 255, 255, 0);
+    }
+
+    100%{
+        color: rgba(0, 255, 255, 1);
+    }
+}
