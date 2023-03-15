@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: rgb(207, 238, 158);
+}
+
+form input{
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 0;
+}
+
+form input[type = 'text']:focus{
+    outline-width: 0;
+}
+
+form input[type = 'submit']{
+    cursor: pointer;
+    border-radius: 30px;
+    background-color: rgb(30, 32, 25);
+    color: rgb(255,255,255);
+    transition: 0.3s;
+}
+
+form input[type = 'submit']:hover{
+    background-color: rgb(53, 56, 44);
+}
+
+table{
+    background-color: rgb(141, 171, 127);
+    width: 380px;
+    margin-top: 25px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 19px;
+}
+
+table td{
+    padding: 5px;
+    background-color: rgb(207, 238, 158);
+}
+
+table .tdResposta{
+    width: 100px;
+    text-align: center;
+}

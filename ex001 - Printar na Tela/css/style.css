@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;;
+    box-sizing: border-box;
+    background-color: rgb(157, 157, 255);
+}
+
+html,body{
+    height: 100%;
+}
+
+input{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 300px;
+    padding: 15px;
+    border: 2px solid rgb(255, 0, 170);
+    border-radius: 50px;
+
+    color: rgb(34, 34, 34);
+}
+
+input[type = 'submit']{
+    top: calc(50% + 50PX);
+    cursor: pointer;
+}
+
+p{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 120px;
+}
